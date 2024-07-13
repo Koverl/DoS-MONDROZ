@@ -1,11 +1,15 @@
 import time
+import os
 import requests
 from colorama import Fore, Style, init
 
-# Initialize colorama
+
 init(autoreset=True)
 
-# Print ASCII art in green
+
+os.system('cls')
+
+
 print(Fore.GREEN + """
 ##   ##   ## ##   ###  ##  ### ##   ### ##    ## ##   ### ##   
  ## ##   ##   ##    ## ##   ##  ##   ##  ##  ##   ##  ##  ##   
@@ -15,7 +19,7 @@ print(Fore.GREEN + """
 ##   ##  ##   ##   ##  ##   ##  ##   ##  ##  ##   ##  ##  ##   
 ##   ##   ## ##   ###  ##  ### ##   #### ##   ## ##   # ####""")
 
-# Print choices in green
+
 choices = input(Fore.GREEN + """What would you like to choose?
                 1: DoS
                 2: IpLookup
@@ -53,3 +57,4 @@ elif choices == "3":
 
 else:
     print(Fore.GREEN + "Invalid choice. Please choose 1, 2, or 3.")
+
